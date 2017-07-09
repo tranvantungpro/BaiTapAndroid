@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trantung.hocradiobutton.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="Mời bạn đánh giá:"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radRTV"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:text="Rất Tuyệt Vời" />
+
+        <RadioButton
+            android:id="@+id/radTV"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:text="Tuyệt Vời" />
+
+        <RadioButton
+            android:id="@+id/radBTH"
+            style="@android:style/Widget.DeviceDefault.CompoundButton.RadioButton"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:text="Bình Thường"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnBinhChon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="XuLyBinhChon"
+        android:text="BÌnh Chọn" />
+
+</LinearLayout>

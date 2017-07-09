@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingBottom="20dp"
+    android:paddingEnd="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="20dp"
+    android:theme="@style/Animation.AppCompat.Dialog"
+    tools:context="com.example.trantung.hoccheckbox.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Bạn thích học những môn nào:"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <CheckBox
+            android:id="@+id/chkAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lập Trình Android" />
+
+        <CheckBox
+            android:id="@+id/chkWin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lập Trình Win" />
+
+        <CheckBox
+            android:id="@+id/chkIOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lập Trình IOS" />
+
+        <Button
+            android:id="@+id/btnChon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn môn học" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Các môn bạn đăng kí học là:" />
+
+        <EditText
+            android:id="@+id/txtMonHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Các môn học sẽ hiển thị ở đây"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtMH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+</LinearLayout>

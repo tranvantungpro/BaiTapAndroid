@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trantung.hocimagebuttonandimageview.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ban Muon Hien Thi Hinh Nao" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="154dp">
+
+        <RadioButton
+            android:id="@+id/radRong"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:text="Hien Thi Rong" />
+
+        <RadioButton
+            android:id="@+id/radZalo"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Hien Thij Xalo" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/zalo" />
+
+    <ImageButton
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        app:srcCompat="@drawable/rong" />
+
+</LinearLayout>

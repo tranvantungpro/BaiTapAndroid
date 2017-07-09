@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trantung.hoccackythuatxulysukien.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|right"
+        android:text="Nhập a:" />
+
+    <EditText
+        android:id="@+id/txta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập b:" />
+
+    <EditText
+        android:id="@+id/txtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="xuLyPhepCong"
+            android:text="(+) onClickXML" />
+
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:onClick="XuLyPhepTru"
+            android:text="(-) Anomous Lis" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(*) Variable Lis" />
+
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(/)Variable Lis" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity as Liss" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esclipes Lis" />
+
+    <Button
+        android:id="@+id/btnDoiManHinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="XuLyDoiManHinh"
+        android:text="Doi Man Hinh Khac" />
+
+
+
+</LinearLayout>
